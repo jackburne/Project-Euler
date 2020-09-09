@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func findMulti() int {
 	var sum int
@@ -19,5 +23,8 @@ func findMulti() int {
 }
 
 func main() {
-	fmt.Print(findMulti())
+	fmt.Println(findMulti())
+
+	fmt.Println("Press 'Enter' to continue...")
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }
