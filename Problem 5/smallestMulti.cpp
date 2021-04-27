@@ -1,3 +1,4 @@
+// INCOMPLETE!!!
 #include <iostream>
 #include <string>
 using namespace std;
@@ -18,6 +19,6 @@ void smallestDivisor(int x) {
 int main() {
   int x = 2520;
 
-  str ans = smallestDivisor(x);
+  string ans = smallestDivisor(x);
   cout << ans;
 }
