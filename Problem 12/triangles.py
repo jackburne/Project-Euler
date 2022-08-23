@@ -2,7 +2,9 @@
 # 2. find all the factors of this number
 # 3. Is it more than 500?
 import math
+import time
 
+t1 = time.time()
 
 # Function for finding factors of a given number
 def factors(n):
@@ -27,6 +29,9 @@ def main():
 
         if factors(y) >= 500:
             print(y)
+            t2 = time.time()
+
+            print("Time Taken: " + str(t2-t1))
             break
 
 
